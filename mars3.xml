@@ -96,25 +96,4 @@
       <block type="movement_stop" id="328"></block>
     </next>
   </block>
-  <block type="math_number" id="157" x="517" y="384">
-    <field name="NUM">0</field>
-  </block>
-  <block type="math_number" id="158" x="644" y="461">
-    <field name="NUM">0</field>
-  </block>
-  <block type="math_number" id="152" x="546" y="516">
-    <field name="NUM">0</field>
-  </block>
-  <block type="math_number" id="159" x="509" y="526">
-    <field name="NUM">0</field>
-  </block>
-  <block type="math_number" id="156" x="469" y="533">
-    <field name="NUM">0</field>
-  </block>
-  <block type="math_number" id="153" x="588" y="533">
-    <field name="NUM">0</field>
-  </block>
-  <block type="math_number" id="154" x="627" y="543">
-    <field name="NUM">0</field>
-  </block>
 </xml>
