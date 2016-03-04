@@ -1,1 +1,120 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_whileUntil" id="21" inline="false" x="12" y="37">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="30">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="50" inline="false">
+        <mutation elseif="1" else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="122" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_spectrometer" id="70">
+                <field name="LIGHT">RED</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="144">
+                <field name="NUM">75</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_setmotors" id="229" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="145">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="146">
+                <field name="NUM">50</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_compare" id="237" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_spectrometer" id="264">
+                <field name="LIGHT">RED</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="147">
+                <field name="NUM">95</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="movement_setmotors" id="289" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="150">
+                <field name="NUM">50</field>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="149">
+                <field name="NUM">95</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="movement_setmotors" id="300" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="148">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_number" id="151">
+                <field name="NUM">95</field>
+              </block>
+            </value>
+            <next>
+              <block type="robot_delay" id="318" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="155">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <next>
+      <block type="movement_stop" id="328"></block>
+    </next>
+  </block>
+  <block type="math_number" id="157" x="517" y="384">
+    <field name="NUM">0</field>
+  </block>
+  <block type="math_number" id="158" x="644" y="461">
+    <field name="NUM">0</field>
+  </block>
+  <block type="math_number" id="152" x="546" y="516">
+    <field name="NUM">0</field>
+  </block>
+  <block type="math_number" id="159" x="509" y="526">
+    <field name="NUM">0</field>
+  </block>
+  <block type="math_number" id="156" x="469" y="533">
+    <field name="NUM">0</field>
+  </block>
+  <block type="math_number" id="153" x="588" y="533">
+    <field name="NUM">0</field>
+  </block>
+  <block type="math_number" id="154" x="627" y="543">
+    <field name="NUM">0</field>
+  </block>
+</xml>
